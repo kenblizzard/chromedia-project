@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/:id" element={<AnimeDetailsPage />}/>
-        <Route path="/" element={<AnimeSearchPage />}/>
+        <Route path="/" index element={<AnimeSearchPage />}/>
+        <Route path="/:animeId" element={<AnimeDetailsPage />}/>
       </Routes>
     </Router>
   );
